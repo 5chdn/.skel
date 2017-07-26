@@ -1,0 +1,6 @@
+#!/bin/bash
+
+# Usage:
+#   ~ $ spng
+
+/usr/bin/hp-scan -s file -m color -t mm --size=a4 -x jpeg -r 450 -f ~/Pictures/Scans/`$(date +%s)`.png

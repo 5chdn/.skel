@@ -1,0 +1,6 @@
+#!/bin/bash
+
+# Usage:
+#   ~ $ spdf
+
+/usr/bin/hp-scan -s file -m color -t mm --size=a4 -x jpeg -r 150 --adf --dup -f ~/Documents/Scans/`$(date +%s)`.pdf
