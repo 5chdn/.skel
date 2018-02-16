@@ -7,3 +7,17 @@ $ rm -rf .skel/.git/ .skel/LICENSE .skel/README.md
 $ rsync .skel/* $HOME/
 $ source $HOME/.zshrc
 ```
+
+Note to self
+
+- uses fasd: https://github.com/clvv/fasd
+- uses pure: https://github.com/sindresorhus/pure
+- uses fzf: https://github.com/junegunn/fzf
+- uses dracula: https://github.com/dracula/vim
+- uses airline: https://github.com/vim-airline/vim-airline
+
+Thanks
+
+- remotely inspired by: https://github.com/andresilva/dotfiles
+
+
