@@ -77,7 +77,7 @@ vnoremap <F1> :set invfullscreen<CR>
 map <leader>q gqip
 
 " Visualize tabs and newlines
-set listchars=eol:¬,tab:>·,trail:~,extends:>,precedes:<,space:␣
+set listchars=trail:~
 set list
 
 " Or use your leader key + l to toggle on/off
@@ -86,3 +86,7 @@ map <leader>l :set list!<CR> " Toggle tabs and EOL
 " Color scheme (terminal)
 set t_Co=256
 set background=dark
+color dracula
+
+set laststatus=2
+
