@@ -39,4 +39,5 @@ PATH="$PATH:/home/user/.bin"
 
 # fasd :)
 eval "$(fasd --init auto)"
+alias j='fasd_cd -i'
 
