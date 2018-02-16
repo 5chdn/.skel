@@ -30,5 +30,6 @@ export PATH="$PATH:/home/user/.bin"
 if [ -f ~/.git-completion.bash ]; then
   . ~/.git-completion.bash
 fi
+export GPG_TTY=$(tty)
 
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
