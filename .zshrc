@@ -1,5 +1,5 @@
 # The following lines were added by compinstall
-zstyle :compinstall filename '$HOME/.zshrc'
+zstyle :compinstall filename '/home/user/.zshrc'
 
 autoload -Uz compinit
 compinit
@@ -12,6 +12,7 @@ bindkey -e
 # End of lines configured by zsh-newuser-install
 
 # Pure zsh
+fpath=( "$HOME/.zfunc" $fpath )
 autoload -U promptinit; promptinit
 prompt pure
 fpath=( "$HOME/.zfunc" $fpath )
@@ -36,6 +37,7 @@ PROMPT_COMMAND="history -a; history -c; history -r; $PROMPT_COMMAND"
 EDITOR=vim
 GOPATH="$HOME/.go"
 PATH="$PATH:/home/user/.bin"
+SHELL="/usr/bin/zsh"
 
 # fasd :)
 eval "$(fasd --init auto)"
