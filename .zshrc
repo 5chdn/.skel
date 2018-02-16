@@ -14,9 +14,9 @@ bindkey -e
 # Pure zsh
 autoload -U promptinit; promptinit
 prompt pure
+fpath=( "$HOME/.zfunc" $fpath )
 
 # fzf :)
-fpath=( "$HOME/.zfunctions" $fpath )
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 setopt AUTO_CD
 
