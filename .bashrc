@@ -30,3 +30,5 @@ export PATH="$PATH:/home/user/.bin"
 if [ -f ~/.git-completion.bash ]; then
   . ~/.git-completion.bash
 fi
+
+[ -f ~/.fzf.bash ] && source ~/.fzf.bash
