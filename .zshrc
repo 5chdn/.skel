@@ -43,3 +43,5 @@ SHELL="/usr/bin/zsh"
 eval "$(fasd --init auto)"
 alias j='fasd_cd -i'
 
+# the fuck
+eval $(thefuck --alias)
