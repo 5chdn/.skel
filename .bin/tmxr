@@ -4,4 +4,4 @@
 #   ~ $ tmxr
 # Note: use a full screen terminal
 
-tmux new-session \; send-keys 'syncthing' C-m \; split-window -v -p 85 \; send-keys 'parity --mode passive --pruning fast --warp' C-m \; split-window -v -p 82 \; split-window -h \; send-keys 'top' C-m \; split-window -v \; send-keys 'sudo iotop' C-m \; select-pane -t 2 \; split-window -v \; send-keys 'weechat' C-m \; select-pane -t 2 \; send-keys 'archey' C-m \; split-window -h \; send-keys 'pacaur -Syyu' C-m \;
+tmux new-session \; send-keys 'syncthing' C-m \; split-window -v -p 85 \; send-keys 'parity' C-m \; split-window -v -p 82 \; split-window -h \; send-keys 'top' C-m \; split-window -v \; send-keys 'sudo iotop' C-m \; select-pane -t 2 \; split-window -v \; send-keys 'weechat' C-m \; select-pane -t 2 \; send-keys 'archey' C-m \; split-window -h \; send-keys 'pacaur -Syyu' C-m \;
