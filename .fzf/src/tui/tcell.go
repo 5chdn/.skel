@@ -295,12 +295,24 @@ func (r *FullscreenRenderer) GetChar() Event {
 			return Event{BSpace, 0, nil}
 
 		case tcell.KeyUp:
+			if alt {
+				return Event{AltUp, 0, nil}
+			}
 			return Event{Up, 0, nil}
 		case tcell.KeyDown:
+			if alt {
+				return Event{AltDown, 0, nil}
+			}
 			return Event{Down, 0, nil}
 		case tcell.KeyLeft:
+			if alt {
+				return Event{AltLeft, 0, nil}
+			}
 			return Event{Left, 0, nil}
 		case tcell.KeyRight:
+			if alt {
+				return Event{AltRight, 0, nil}
+			}
 			return Event{Right, 0, nil}
 
 		case tcell.KeyHome:
@@ -370,12 +382,16 @@ func (r *FullscreenRenderer) GetChar() Event {
 	return Event{Invalid, 0, nil}
 }
 
-func (r *FullscreenRenderer) Pause(bool) {
-	_screen.Fini()
+func (r *FullscreenRenderer) Pause(clear bool) {
+	if clear {
+		_screen.Fini()
+	}
 }
 
-func (r *FullscreenRenderer) Resume(bool) {
-	r.initScreen()
+func (r *FullscreenRenderer) Resume(clear bool) {
+	if clear {
+		r.initScreen()
+	}
 }
 
 func (r *FullscreenRenderer) Close() {
