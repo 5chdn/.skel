@@ -17,6 +17,7 @@ Credits
 - uses airline: https://github.com/vim-airline/vim-airline
 - uses tmux-dracula: https://github.com/sei40kr/tmux-airline-dracula
 - uses thefuck: https://github.com/nvbn/thefuck
+- uses `zsh-syntax-highlighting` (fish-like)
 
 Thanks
 

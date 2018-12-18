@@ -45,3 +45,15 @@ alias j='fasd_cd -i'
 
 # the fuck
 eval $(thefuck --alias)
+
+# fish-like
+source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
+# bindkey
+bindkey "^?" backward-delete-char
+bindkey "^[[1;5C" emacs-forward-word
+bindkey "^[[1;5D" emacs-backward-word
+bindkey "^[[2~" overwrite-mode
+bindkey "^[[3~" delete-char
+bindkey "^[[F" end-of-line
+bindkey "^[[H" beginning-of-line
